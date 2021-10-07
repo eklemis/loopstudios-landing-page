@@ -25,7 +25,7 @@ h1{
 }
 section.hero .burger {
     display: flex;
-    position: fixed;
+    position: absolute;
     width: var(--sec_width);
     align-items:center;
     justify-content: space-between;
