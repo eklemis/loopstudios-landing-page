@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 :root {
     --sec_width: 375px;
+    --sec_port_width: 100%;
     --sec_height: 600px;
     --box_padding: 25px;
     --box_vert_margin: 50px; 
@@ -26,7 +27,8 @@ h1{
 section.hero .burger {
     display: flex;
     position: absolute;
-    width: var(--sec_width);
+    min-width: var(--sec_width);
+    width: var(--sec_port_width);
     align-items:center;
     justify-content: space-between;
     padding-right: 22px;
@@ -49,7 +51,8 @@ nav.navigation{
     background-color: black;
     display: none;/*flex;*/
     flex-direction: column;
-    width: var(--sec_width);
+    min-width: var(--sec_width);
+    width: var(--sec_port_width);
     padding: var(--box_padding) var(--box_padding);
     height: 550px;
     top: 0;
@@ -70,22 +73,25 @@ nav.navigation a:last-child{
     margin-bottom: 25px;
 }
 .hero{
-    width: var(--sec_width);
+    min-width: var(--sec_width);
+    width: var(--sec_port_width);
     margin: 0px auto;
     height: var(--sec_height);
     position: relative;
     background-image: url('./images/mobile/image-hero.jpg');
     background-size: cover;
     margin-bottom: calc(var(--box_vert_margin) * 2);
-    /*border: white solid 1px;*/
 }
 .hero .story{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: white solid 2px;
     width: var(--box_inside_width);
     height: 225px;
     top: calc( 50% - (225px / 2) );
-    left: calc(( var(--sec_width) / 2) - (var(--box_inside_width) / 2));
+    left: calc(( var(--sec_port_width) / 2) - (var(--box_inside_width) / 2));
     padding: var(--box_padding) var(--box_padding);
 }
 .hero-label{
@@ -214,10 +220,12 @@ div.footer{
 footer.footer{
     margin: 0px auto;
     margin-top: calc(var(--box_vert_margin) * 2);
-    width: var(--sec_width);
+    min-width: var(--sec_width);
+    width: var(--sec_port_width);
 }
 div.footer{
-    width: var(--sec_width);
+    min-width: var(--sec_width);
+    width: var(--sec_port_width);
     margin: 0px auto;
     background-color: black;
     color: white;
