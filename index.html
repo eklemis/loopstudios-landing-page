@@ -14,15 +14,16 @@
 </head>
 <body>
   <section class="hero">
-    <div class="burger">
-      <img src="./images/icon-hamburger.svg" alt="burger"/>
+    <div class="burger" id="burger-home">
+      <a href="" class="logo"><img src="./images/logo.svg" alt="logo"/></a>
+      <a href="#" onclick="show_menu(this)" class="hide" id="burger-triger"><img src="./images/icon-hamburger.svg" alt="burger" id="btn-burger"/></a>
     </div>
     <nav class="navigation" id="main-menu">
-      <a href="#">About</a>
-      <a href="#">Careers</a>
-      <a href="#">Events</a>
-      <a href="#">Products</a>
-      <a href="#">Support</a>
+      <a href="#" onclick="close_menu()">About</a>
+      <a href="#" onclick="close_menu()">Careers</a>
+      <a href="#" onclick="close_menu()">Events</a>
+      <a href="#" onclick="close_menu()">Products</a>
+      <a href="#" onclick="close_menu()">Support</a>
     </nav>
     <div class="story">
       <h1 class="hero-label">Immersive experiences that deliver</h1>

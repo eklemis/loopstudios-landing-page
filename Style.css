@@ -27,16 +27,22 @@ section.hero .burger {
     display: flex;
     position: fixed;
     width: var(--sec_width);
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 12px;
+    align-items:center;
+    justify-content: space-between;
+    padding-right: 22px;
+    padding-left: 22px;
     margin-top: 30px;
+    margin-bottom: 200px;
 }
-.burger img{
+.burger a:nth-child(1) img{
+    width: 150px;
+}
+.burger a:nth-child(2) img{
     width: 20px;
-    height: 20px;
+    height: 18px;
     color: white;
-    font-weight: 300;    
+    font-weight: 300;
+    margin-top: 0px;    
 }
 nav.navigation{
     position: fixed;
@@ -45,12 +51,17 @@ nav.navigation{
     flex-direction: column;
     width: var(--sec_width);
     padding: var(--box_padding) var(--box_padding);
+    height: 550px;
     top: 0;
+    z-index: 1000;
+    padding-top: 150px;
 }
 nav.navigation a{
-    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    text-transform: uppercase;
     color: white;
     font-weight: 300;
     margin-top: 25px;
@@ -61,20 +72,20 @@ nav.navigation a:last-child{
 .hero{
     width: var(--sec_width);
     margin: 0px auto;
-    top: 0;
     height: var(--sec_height);
     position: relative;
     background-image: url('./images/mobile/image-hero.jpg');
     background-size: cover;
     margin-bottom: calc(var(--box_vert_margin) * 2);
-    border: green dashed 1px;
+    /*border: white solid 1px;*/
 }
 .hero .story{
+    position: absolute;
     border: white solid 2px;
     width: var(--box_inside_width);
     height: 225px;
-    margin: auto auto;
-    margin-top: 50%;
+    top: calc( 50% - (225px / 2) );
+    left: calc(( var(--sec_width) / 2) - (var(--box_inside_width) / 2));
     padding: var(--box_padding) var(--box_padding);
 }
 .hero-label{
