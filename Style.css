@@ -1,2 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root {
+    --sec_width: 375px;
+    --sec_height: 600px;
+    --box_padding: 25px;
+    --box_vert_margin: 50px; 
+    --box_inside_width: 88%;
+    --text_color: #777;
+}
+*{
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 34px;
+    letter-spacing: 5x;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+section.hero .burger {
+    display: flex;
+    position: fixed;
+    width: var(--sec_width);
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 12px;
+    margin-top: 30px;
+}
+.burger img{
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: 300;    
+}
+nav.navigation{
+    position: fixed;
+    background-color: black;
+    display: none;/*flex;*/
+    flex-direction: column;
+    width: var(--sec_width);
+    padding: var(--box_padding) var(--box_padding);
+    top: 0;
+}
+nav.navigation a{
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin-top: 25px;
+}
+nav.navigation a:last-child{
+    margin-bottom: 25px;
+}
+.hero{
+    width: var(--sec_width);
+    margin: 0px auto;
+    top: 0;
+    height: var(--sec_height);
+    position: relative;
+    background-image: url('./images/mobile/image-hero.jpg');
+    background-size: cover;
+    margin-bottom: calc(var(--box_vert_margin) * 2);
+    border: green dashed 1px;
+}
+.hero .story{
+    border: white solid 2px;
+    width: var(--box_inside_width);
+    height: 225px;
+    margin: auto auto;
+    margin-top: 50%;
+    padding: var(--box_padding) var(--box_padding);
+}
+.hero-label{
+    font-size: 42px;
+    margin: 0px 0px;
+}
+.story h1{
+    color: white;
+}
+.wrapper{
+    width: var(--sec_width);
+    margin: 50px auto;
+    margin-top: 0px;
+}
+.wrapper section{
+    margin: var(--box_vert_margin) auto;
+}
+.wrapper h1{
+    text-align: center;
+    margin-bottom: calc( var(--box_vert_margin) / 2 );
+}
+.wrapper .vision .vision-item{
+    width: var(--box_inside_width);
+    margin-left: auto;
+    margin-right: auto;
+}
+.vision-item:nth-child(1){
+    height: 200px;
+}
+.vision-item:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+.vision-item p{
+    text-align: center;
+    line-height: 2;
+    color: var(--text_color);
+    padding: 5px 5px;
+}
+.creation h1{
+    text-align: center;
+    margin-top: calc(var(--box_vert_margin) * 2);
+    margin-bottom: var(--box_vert_margin);
+}
+.creation-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;    
+    margin-top: calc( var(--box_vert_margin) / 2 );   
+}
+.creation-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.creation-item{
+    width: var(--box_inside_width);
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    margin-bottom: 25px;
+    padding: var(--box_padding) var(--box_padding);
+    background-color: cornflowerblue;
+    background-size: cover;
+}
+.creation-item:nth-child(1){
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)), url('./images/mobile/image-deep-earth.jpg');
+}
+.creation-item:nth-child(2){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-night-arcade.jpg');
+}
+.creation-item:nth-child(3){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-soccer-team.jpg');
+}
+.creation-item:nth-child(4){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-grid.jpg');
+}
+.creation-item:nth-child(4) h2{
+    width: 80px;
+}
+.creation-item:nth-child(5){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-from-above.jpg');
+}
+.creation-item:nth-child(6){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-pocket-borealis.jpg');
+}
+.creation-item:nth-child(7){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-curiosity.jpg');
+}
+.creation-item:nth-child(8){
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url('./images/mobile/image-fisheye.jpg');
+}
+.creation-item h2{
+    color: white;
+    margin-top: 50px;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;    
+    width: 160px;
+}
+.creation-item img{
+    width: 100%;
+    height: 100%;
+}
+div.footer{
+    display: flex;
+    flex-direction: column;
+}
+.see-all{
+    width: 150px;
+    height: 35px;
+    border: black solid 1px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 1pt #d6d6d6, -1px -1px 1pt #d6d6d6;
+    letter-spacing: 5px;
+}
+footer.footer{
+    margin: 0px auto;
+    margin-top: calc(var(--box_vert_margin) * 2);
+    width: var(--sec_width);
+}
+div.footer{
+    width: var(--sec_width);
+    margin: 0px auto;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: calc(var(--box_padding) * 2) var(--box_padding);
+    width: 100%;
+}
+.footer-item:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+.footer-item:nth-child(3){
+    display: flex;
+    margin-top: 50px;
+    column-gap: 15px;
+}
+.footer-item:nth-child(3) img{
+    width: 22px;
+    height: 22px;
+    margin: 0px 5px;
+}
+.footer-item p{
+    font-size: 12px;
+    color: var(--text_color);
+    text-align: center;
+}
+.footer-item a{
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin-top: 25px;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
